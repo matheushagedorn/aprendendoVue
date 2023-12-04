@@ -1,0 +1,30 @@
+{
+  "name": "agoravai",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "backend": "json-server --watch db/db.json"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.23.5",
+    "@headlessui/vue": "^1.7.16",
+    "@heroicons/vue": "^2.0.18",
+    "axios": "^1.6.2",
+    "babel": "^6.23.0",
+    "json-server": "^0.17.4",
+    "vue": "^3.3.4",
+    "vue-api-query": "^1.11.0",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@vitejs/plugin-vue": "^4.4.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "vite": "^4.4.11"
+  }
+}
