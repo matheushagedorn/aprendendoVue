@@ -3,9 +3,9 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
-import axios from 'axios'
-import { Model } from 'vue-api-query'
-Model.$http = axios;
+// import axios from 'axios'
+// import { Model } from 'vue-api-query'
+// Model.$http = axios;
 
 const app = createApp(App)
 

@@ -2,20 +2,20 @@
   "users": [
     {
       "id": 1,
-      "name": ["Matheus Hagedorn", "155010"],
-      "email": "matheushagedorn@univille.br",
+      "name": ["Teste1", "12321"],
+      "email": "teste1@univille.br",
       "password": "123456"
     },
     {
       "id": 2,
-      "name": ["Teste1", "123"],
-      "email": "teste1@univille.br",
+      "name": ["Teste2", "123"],
+      "email": "teste2@univille.br",
       "password": "123"
     },
     {
       "id": 3,
-      "name": ["Teste2", "321"],
-      "email": "teste2@univille.br",
+      "name": ["Teste3", "321"],
+      "email": "teste3@univille.br",
       "password": "321"
     }
   ]

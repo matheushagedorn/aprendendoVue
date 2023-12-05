@@ -28,6 +28,7 @@
           >
           <div class="mt-2">
             <input
+              v-model="form.user"
               id="email"
               name="email"
               type="text"
@@ -50,6 +51,7 @@
           </div>
           <div class="mt-2">
             <input
+              v-model="form.password"
               id="password"
               name="password"
               type="password"
@@ -62,7 +64,7 @@
 
         <div>
           <button
-            @click="x()"
+            @click="(getAll)"
             type="button"
             class="flex w-full justify-center rounded-md bg-green-800 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
@@ -75,27 +77,32 @@
 </template>
 
 <script setup>
-  import UsersModel from "@/models/UsersModel";
-  import Model from "@/models/Model";
+import { ref } from 'vue'
+import UsersService from '@/services/UsersService'
 
-  const apiModel = new Model()
-  const apiUsers = new UsersModel()
+const apiUsers = new UsersService()
+const error = ref(false)
 
-  async function x() {
-    await apiUsers.teste()
-      .then((response) => {
-        console.log('oi')
-      })
-      .catch(e => {
-        console.log(e)
-      })
-  }
 
-  // async function x(name, password){
-  //   await apiUsers.resource()
-  //   .then((response) => {
-  //     console.log(users);
-  //   })
-  // };
+async function getAll() {
+  await apiUsers.getAll(form.value)
+    .then((response) => {
+      if (response.status == 401) {
+                error.value = true
+            } else {
+                error.value = false
+                setLocalStorageContent(response.data)
+                window.location.href = '/HomeView'
+            }
+        })
+        .catch(e => {
+            error.value = true
+    })
+}
 
-  </script>
+const form = ref({
+  user: '',
+  password: ''
+})
+
+</script>
