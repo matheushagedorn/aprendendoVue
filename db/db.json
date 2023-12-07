@@ -1,21 +1,21 @@
 {
-  "users": [
+  "user": [
     {
       "id": 1,
-      "name": ["Teste1", "12321"],
+      "name": "teste1",
       "email": "teste1@univille.br",
       "password": "123456"
     },
     {
       "id": 2,
-      "name": ["Teste2", "123"],
+      "name": "teste2",
       "email": "teste2@univille.br",
       "password": "123"
     },
     {
       "id": 3,
-      "name": ["Teste3", "321"],
-      "email": "teste3@univille.br",
+      "name": "teste3",
+      "email": "teste2@univille.br",
       "password": "321"
     }
   ]
