@@ -4,15 +4,15 @@ Projeto simples de um WebApp contendo uma tela de login utilizando como API o Js
 
 ## Setup inicial
 
-Utilize ```sh npm install``` para instalar todas as dependências do projeto
+Utilize ```npm install``` para instalar todas as dependências do projeto
 
 ### Rode a aplicação
 
-Utilize ```sh npm run dev``` para rodar sua aplicação localmente e visualizar suas alterações em tempo real
+Utilize ```npm run dev``` para rodar sua aplicação localmente e visualizar suas alterações em tempo real
 
 ### Rode a API
 
-Utilize ```sh npm run backend``` para rodar o Json-server para poder realizar o GET no servidor
+Utilize ```npm run backend``` para rodar o Json-server para poder realizar o GET no servidor
 
 ### Usuários para testar:
 ```
