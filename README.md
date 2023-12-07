@@ -1,29 +1,30 @@
-# agoraVai
+# Aprendendo Vue
 
-This template should help get you started developing with Vue 3 in Vite.
+Projeto simples de um WebApp contendo uma tela de login utilizando como API o Json-server e o Axios para realizar a autenticação. Conta também com uma barra de menu fixo e três páginas diferentes que atualizam conforme o usuário navegue entre elas
 
-## Recommended IDE Setup
+## Setup inicial
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Utilize ```sh npm install``` para instalar todas as dependências do projeto
 
-## Customize configuration
+### Rode a aplicação
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Utilize ```sh npm run dev``` para rodar sua aplicação localmente e visualizar suas alterações em tempo real
 
-## Project Setup
+### Rode a API
 
-```sh
-npm install
+Utilize ```sh npm run backend``` para rodar o Json-server para poder realizar o GET no servidor
+
+### Usuários para testar:
+```
+Login: teste1
+Senha: 123456
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
 ```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
+Login: teste2
+Senha: 123
+```
+```
+Login: teste3
+Senha: 321
 ```
